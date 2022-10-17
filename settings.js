@@ -54,33 +54,35 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.vcardowner = ['918974430869'] //ur owner number
-global.ownername = "HayHay" //ur owner name
-global.ytname = "HayHay" //ur yt chanel name
-global.socialm = "GitHub: HayHay" //ur github or insta name
-global.location = "India, Mizoram, Aizawl" //ur location
+global.vcardowner = ['94702476028'] //ur owner number
+global.ownername = "🌹⃝⃘̉̉̉̉̉̉🧚ℕ𝕖𝕡𝕥𝕦𝕟𝕖❤️⃝➤⃟̱̱̱̱̄̄̄̄" //ur owner name
+global.ytname = "Youtube: Neptune" //ur yt chanel name
+global.socialm = "GitHub: Nep-28" //ur github or insta name
+global.location = "Sri Lanka, Southern Province, Galle" //ur location
 
 //bot bomdy 
-global.owner = ['918974430869']
-global.ownertag = '918974430869' //ur tag number
-global.botname = 'HayHay Bot' //ur bot name
-global.linkz = "https://youtu.be/WiIqCdiDjFo" //your theme url which will be displayed on whatsapp
-global.websitex = "https://youtu.be/WiIqCdiDjFo" //ur website to be displayed
-global.botscript = 'https://github.com/DGXeon/CheemsBot-MD4' //script link
-global.reactmoji = "😘" //ur menu react emoji
-global.themeemoji = "🦄" //ur theme emoji
-global.packname = "Sticker By\n " //ur sticker watermark packname
-global.author = "HayHay Bot" //ur sticker watermark author
-global.wm = "HayHay Bot Presents"
+global.owner = ['94702476028']
+global.ownertag = '94702476028' //ur tag number
+global.botname = '🦋⃝❉⃟࿔ꦿℕ𝕣𝕡𝔹𝕠𝕥𝕫۝⃟̥̩̩̩̥̩̥͚̮💍' //ur bot name
+global.footer = '🌹⃝⃘̉̉̉̉̉̉🧚𝙽𝚎𝚙𝚋𝚘𝚝𝚣 𝚙𝚞𝚋𝚕𝚒𝚌 𝚎𝚍𝚒𝚝𝚘𝚗' // ur footer
+global.linkz = "https://chat.whatsapp.com/Gi47BN7YM30321sUIa7mtT" //your theme url which will be displayed on whatsapp
+global.websitex = "https://chat.whatsapp.com/Gi47BN7YM30321sUIa7mtT" //ur website to be displayed
+global.botscript = 'Nothing' //script link
+global.reactmoji = "✅" //ur menu react emoji
+global.themeemoji = "🐱" //ur theme emoji
+global.note = "It's Upgrating Time" // ur note
+global.packname = "NepBotz Stickers\n\n\n\n\n\n\n\n\n\n\n🌹⃝⃘̉̉̉̉̉̉🧚ℕ𝕖𝕡𝕥𝕦𝕟𝕖❤️⃝➤⃟̱̱̱̱̄̄̄̄ " //ur sticker watermark packname
+global.author = "🌹⃝⃘̉̉̉̉̉̉🧚ℕ𝕖𝕡𝕥𝕦𝕟𝕖❤️⃝➤⃟̱̱̱̱̄̄̄̄" //ur sticker watermark author
+global.wm = "🌹⃝⃘̉̉̉̉̉̉🧚𝙽𝚎𝚙𝚋𝚘𝚝𝚣 𝚙𝚞𝚋𝚕𝚒𝚌 𝚎𝚍𝚒𝚝𝚘𝚗"
 
 //Bot theme media
-global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
-global.log0 = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur logo pic
-global.err4r = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur error pic
-global.thumb = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
+global.thum = fs.readFileSync("./XeonMedia/theme/log0.jpg") //ur thumb pic
+global.log0 = fs.readFileSync("./XeonMedia/theme/log0.jpg") //ur logo pic
+global.err4r = fs.readFileSync("./XeonMedia/theme/ea404.jpg") //ur error pic
+global.thumb = fs.readFileSync("./XeonMedia/theme/log0.jpg") //ur thumb pic
 
 //damtabase
-global.premium = ['916909137213'] //ur premium numbers
+global.premium = ['94702476028'] //ur premium numbers
 global.ntilinkytvid = []
 global.ntilinkytch = []
 global.ntilinkig = []
@@ -136,7 +138,7 @@ global.mess = {
    potionawal: 1
 }
 
-global.thumb = fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')
+global.thumb = fs.readFileSync('./XeonMedia/theme/log0.jpg')
 global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.fluming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.flarun = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
