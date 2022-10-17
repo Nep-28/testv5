@@ -63,7 +63,7 @@ global.location = "Sri Lanka, Southern Province, Galle" //ur location
 //bot bomdy 
 global.owner = ['94702476028']
 global.ownertag = '94702476028' //ur tag number
-global.botname = '🦋⃝❉⃟࿔ꦿℕ𝕣𝕡𝔹𝕠𝕥𝕫۝⃟̥̩̩̩̥̩̥͚̮💍' //ur bot name
+global.botname = '🦋⃝❉⃟࿔ꦿℕ𝕖𝕡𝔹𝕠𝕥𝕫۝⃟̥̩̩̩̥̩̥͚̮💍' //ur bot name
 global.footer = '🌹⃝⃘̉̉̉̉̉̉🧚𝙽𝚎𝚙𝚋𝚘𝚝𝚣 𝚙𝚞𝚋𝚕𝚒𝚌 𝚎𝚍𝚒𝚝𝚘𝚗' // ur footer
 global.linkz = "https://chat.whatsapp.com/Gi47BN7YM30321sUIa7mtT" //your theme url which will be displayed on whatsapp
 global.websitex = "https://chat.whatsapp.com/Gi47BN7YM30321sUIa7mtT" //ur website to be displayed
