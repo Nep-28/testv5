@@ -1129,25 +1129,24 @@ const latensie = speed() - timestampe
  └─────────────┈ ⳹
 ╰════ 〘 ${global.botname} 〙════❖•`
                 const menulist = `┌─❖
-│「 Hi 👋 」
+│「 ʰⁱ 👋 」
 └┬❖ 「 ${pushname} 」
-┌┤✑  How Are You? 😄
+┌┤✑  𝙷𝚘𝚠 𝙰𝚛𝚎 𝚈𝚘𝚞 ? 😄
 │└────────────┈ ⳹
 │
-└─「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」       
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.owner}
-│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
+└─「 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎 」       
+│𝕊𝕡𝕖𝕖𝕕 : ${latensie.toFixed(4)} miliseconds
+│ℝ𝕦𝕟𝕥𝕚𝕞𝕖 : ${runtime(process.uptime())}
+│𝔹𝕠𝕥 ℕ𝕒𝕞𝕖 : ${global.botname}
+│𝕆𝕨𝕟𝕖𝕣 ℕ𝕒𝕞𝕖 : ${global.ownername}
+│𝕆𝕨𝕟𝕖𝕣 ℕ𝕠. : ${global.owner}
+│ℙ𝕝𝕒𝕥𝕗𝕠𝕣𝕞 : ${os.platform()}
+│𝕋𝕠𝕥𝕒𝕝 𝕌𝕤𝕖𝕣 : ${Object.keys(global.db.data.users).length}
+└─「 𝐍𝐎𝐓𝐄 」       
+│ ${global.note}
 └┬────────────┈ ⳹
-   │✑  Please Select
-   │✑  The Button Below
+   │✑  𝘗𝘭𝘦𝘢𝘴𝘦 𝘚𝘦𝘭𝘦𝘤𝘵
+   │✑  𝘛𝘩𝘦 𝘉𝘶𝘵𝘵𝘰𝘯 𝘉𝘦𝘭𝘰𝘸
    └─────────────┈ ⳹`
    
    //randoming function
@@ -2005,9 +2004,7 @@ XeonBotInc.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${s
                     case 'stupid':
       case 'foolish':
       case 'smart':
-      case 'idiot':
-      case 'gay':
-      case 'lesbi':
+	case 'idiot':
       case 'bastard':
       case 'stubble':
       case 'dog':
@@ -2081,10 +2078,6 @@ XeonBotInc.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${s
       case 'khanki':
       case 'bal':
       case 'sucker':
-      case 'fuckboy':
-      case 'playboy':
-      case 'fuckgirl':
-      case 'playgirl':
       case 'hot': {
       	            	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
@@ -2323,7 +2316,7 @@ if (isBanChat) return reply(mess.banChat)
                 await XeonBotInc.groupAcceptInvite(result).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
             }
             break
-                               case 'leavegc': case 'leavegroup': {
+                               case 'leavegc': case 'left': {
 if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 	reply(mess.wait)
@@ -2331,7 +2324,7 @@ if (isBan) return reply(mess.ban)
                 await XeonBotInc.groupLeave(m.chat).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
             }
             break
-            case 'setexif': {
+            case 'spack': {
             	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
                if (!isCreator) return replay(`${mess.owner}`)
@@ -2457,7 +2450,7 @@ let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝
                 XeonBotInc.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
                 break
-                case 'hidetag': {
+                case 'tag': {
                 	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
             if (!m.isGroup) return replay(`${mess.group}`)
@@ -2466,7 +2459,7 @@ if (isBanChat) return reply(mess.banChat)
             XeonBotInc.sendMessage(m.chat, { text : q ? q : '' , mentions: participants.map(a => a.id)}, { quoted: m })
             }
             break
-	    case 'style': case 'styletext': {
+	    case 'fancy': case 'styletext': {
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 	        if (!isPremium && global.db.data.users[m.sender].limit < 1) return reply(mess.endLimit) //wont response when limit runs out\\
@@ -3127,37 +3120,6 @@ replay('Success in turning off antiwame in this group')
   }
   }
   break
-  case 'nsfw': {
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if (!m.isGroup) return replay(mess.group)
-if (!isBotAdmins) return replay(mess.botAdmin)
-if (!isAdmins && !isCreator) return replay(mess.admin)
-if (args[0] === "on") {
-if (AntiNsfw) return replay('Already activated')
-ntnsfw.push(from)
-replay('Success in turning on nsfw in this group')
-var groupe = await XeonBotInc.groupMetadata(from)
-var members = groupe['participants']
-var mems = []
-members.map(async adm => {
-mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
-})
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nNsfw(not safe for work) feature has been enabled in this group, which means one can access sexual graphics from the bot!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
-} else if (args[0] === "off") {
-if (!AntiNsfw) return replay('Already deactivated')
-let off = ntnsfw.indexOf(from)
-ntnsfw.splice(off, 1)
-replay('Success in turning off nsfw in this group')
-} else {
-  let buttonsntnsfw = [
-  { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
-  { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
-  ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntnsfw, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
-  }
-  }
-  break
              case 'mute': {
              	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -3215,13 +3177,13 @@ if (isBanChat) return reply(mess.banChat)
                 }
             }
             break
-case 'grupsetting':
+case 'settings':
             case 'groupsetting':{
             	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
                     let sections = []
-                    let com = [`group open`,`autosticker on`,`welcome on`,`antilinkgc on`,`antilinktg on`,`antilinktt on`,`antilinkytch on`,`antilinkytvid on`,`antilinkig on`,`antilinkfb on`,`antilinktwit on`,`antilinkall on`,`antiwame on`,`antitoxic on`,`antivirus on`,`autoreply on`,`group open`]
-                    let comm = [`group close`,`autosticker off`,`welcome off`,`antilinkgc off`,`antilinktg on`,`antilinktt on`,`antilinkytch on`,`antilinkytvid on`,`antilinkig on`,`antilinkfb on`,`antilinktwit on`,`antilinkall on`,`antiwame on`,`antitoxic on`,`antivirus on`,`autoreply on`,`group close`]
+                    let com = [`group on`,`autosticker on`,`welcome on`,`antilinkgc on`,`antilinktg on`,`antilinktt on`,`antilinkytch on`,`antilinkytvid on`,`antilinkig on`,`antilinkfb on`,`antilinktwit on`,`antilinkall on`,`antiwame on`,`antitoxic on`,`antivirus on`,`autoreply on`,`group on`]
+                    let comm = [`group off`,`autosticker off`,`welcome off`,`antilinkgc off`,`antilinktg on`,`antilinktt on`,`antilinkytch on`,`antilinkytvid on`,`antilinkig on`,`antilinkfb on`,`antilinktwit on`,`antilinkall on`,`antiwame on`,`antitoxic on`,`antivirus on`,`autoreply on`,`group off`]
                     let listnya = [`Group open/close`,`Auto-Sticker on/off`,`Welcome/Left on/off`,`Antilink Group on/off`,`Antilink Telegram on/off`,`Antilink Tiktok on/off`,`Antilink Youtube Channel on/off`,`Antilink Youtube Video on/off`,`Antilink Instagram on/off`,`Antilink Facebook on/off`,`Antilink Twitter on/off`,`Antilink All on/off`,`Anti Wame on/off`,`Anti Toxic on/off`,`Anti Virus on/off`,`Auto Reply on/off`,`Group open/close`]
                     let suruh = [`Enable`, `Disable`]
                     let fiturname = [`Group`,`Auto Sticker`,`Welcome`,`Antilink Group`,`Antilink Telegram`,`Antilink Tiktok`,`Antilink Youtube Channel`,`Antilink Youtube Video`,`Antilink Instagram`,`Antilink Facebook`,`Antilink Twitter`,`Antilink All`,`Anti Wame`,`Anti Toxic`,`Anti Virus`,`Auto Reply`,`Group`]
@@ -3563,28 +3525,6 @@ encmedia = await XeonBotInc.sendImageAsSticker(from, wifegerakx, m, { packname: 
 await fs.unlinkSync(encmedia)
 }
 break
-case 'lovesticker':
-case 'lovestick' :{
-	            	            	if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-var ano = await fetchJson('https://raw.githubusercontent.com/rashidsiregar28/data/main/bucin')
-var wifegerak = ano.split('\n')
-var wifegerakx = wifegerak[Math.floor(Math.random() * wifegerak.length)]
-encmedia = await XeonBotInc.sendImageAsSticker(from, wifegerakx, m, { packname: global.packname, author: global.author, })
-await fs.unlinkSync(encmedia)
-}
-break
-case 'gura':
-case 'gurastick':{
-	                	            	            	if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-var ano = await fetchJson('https://raw.githubusercontent.com/rashidsiregar28/data/main/gura')
-var wifegerak = ano.split('\n')
-var wifegerakx = wifegerak[Math.floor(Math.random() * wifegerak.length)]
-encmedia = await XeonBotInc.sendImageAsSticker(from, wifegerakx, m, { packname: global.packname, author: global.author, })
-await fs.unlinkSync(encmedia)
-}
-break
             case 'sticker': case 's': case 'stickergif': case 'sgif': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -3602,7 +3542,7 @@ reply(`Send Image/Video With Caption ${prefix + command}\nVideo Duration 1-9 Sec
 }
 }
 break
-case 'swm': case 'take': case 'stickerwm': {
+case 'swm': case 'estic': case 'stickerwm': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!args.join(" ")) return reply(`Example :\nswm ${global.author}|${global.packname}`)
@@ -3661,165 +3601,7 @@ if (isBanChat) return reply(mess.banChat)
             reply(db)
         }
         break
-case 'bts':
-if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-teks = `Here you go!`
-buffer = `https://api.dapuhy.xyz/api/randomimage/batues?apikey=0gly81wDky`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:m})
-break
-case 'wallneon': case 'wallrandom': case 'wallcode': case 'wallpubg': case 'wallml': 	
-try{
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-reply(mess.wait)						
-nyz2 = await fetchJson(`https://myselfff.herokuapp.com/docs/wallpaper/${command}`) 
-nyz3 = await getBuffer(nyz2.list.gambar)
-XeonBotInc.sendMessage(from, {image : nyz3, caption:`By ${global.botname}`}, {quoted:m}) 						
-} catch (e) {
-error("Error!")
-}
-break
-case 'woof':
-case '8ball':
-case 'goose':
-case 'gecg':
-case 'feed':
-case 'avatar':
-case 'lizard':
-case 'meow':
-case 'tickle':
-   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-reply(mess.wait)						
- waifudd = await axios.get(`https://nekos.life/api/v2/img/${command}`)
-                           var wbuttsss = [
-        {buttonId: `.${command}`, buttonText: {displayText: `Next ✨`}, type: 1},
-        ]
-      let buttonssMessages = {
-       image: {url:waifudd.data.url},
-       caption:  `Here you go!`,
-      footer: `${global.botname}`,
-      buttons: wbuttsss,
-      headerType: 4
-      }     
-            await XeonBotInc.sendMessage(m.chat, buttonssMessages,{ quoted:m }).catch(err => {
-                    return('Error!')
-                })
-break
-case 'masturbation': case 'jahy': case 'hentai': case 'glasses': case 'gangbang': case 'foot': 
-case 'femdom': case 'cum': case 'ero': case 'cuckold': case 'blowjob': case 'bdsm': 
-case 'ahegao': case 'ass': case 'orgy': case 'panties': case 'pussy': case 'thighs': case 'yuri': case 'tentacles':
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if (!m.isGroup) return replay(mess.group)
-if (!AntiNsfw) return reply(mess.nsfw)
-try{
-reply(mess.wait)
-NoHorny = await fetchJson(`https://myselfff.herokuapp.com/docs/nsfw/${command}`)
-YesHorny = await getBuffer(NoHorny.result)
-XeonBotInc.sendMessage(from, {image:YesHorny},{quoted:m})
-} catch (e) {error("Error")}	
-break
-   case 'spank':
-      if (isBan) return reply(mess.ban)	 			
-   if (isBanChat) return reply(mess.banChat)
-   if (!m.isGroup) return replay(mess.group)
-if (!AntiNsfw) return reply(mess.nsfw)
-reply(mess.wait)
-spankd = await axios.get(`https://nekos.life/api/v2/img/spank`)                                   
-  let spbuff = await getBuffer(spankd.data.url)
-let spgif = await GIFBufferToVideoBuffer(spbuff)   
-        await XeonBotInc.sendMessage(m.chat,{video: spgif, gifPlayback:true},{ quoted:m }).catch(err => {
-                    return reply('Error!')
-                                    })
-break
-case 'blowjobgif': case 'bj' :
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if (!m.isGroup) return replay(mess.group)
-if (!AntiNsfw) return reply(mess.nsfw)
-reply(mess.wait)
-bjd = await axios.get(`https://api.waifu.pics/nsfw/blowjob`)         
-  let bjf = await getBuffer(bjd.data.url)
-let bjif = await GIFBufferToVideoBuffer(bjf)   
-        await XeonBotInc.sendMessage(m.chat,{video: bjif, gifPlayback:true},{ quoted:m }).catch(err => {
-                    return reply('error..')
-                                    })
-break
-case 'hentaivid': case 'hentaivideo': {
-	                        	            	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-	if (!m.isGroup) return replay(mess.group)
-if (!AntiNsfw) return reply(mess.nsfw)
-                reply(mess.wait)
-                anu = await hentai()
-                result912 = anu[Math.floor(Math.random(), anu.length)]
-                XeonBotInc.sendMessage(m.chat, { video: { url: result912.video_1 }, caption: `${themeemoji} Title : ${result912.title}\n${themeemoji} Category : ${result912.category}\n${themeemoji} Mimetype : ${result912.type}\n${themeemoji} Views : ${result912.views_count}\n${themeemoji} Shares : ${result912.share_count}\n${themeemoji} Source : ${result912.link}\n${themeemoji} Media Url : ${result912.video_1}` }, { quoted: m })
-            }
-            break
-case 'trap' :
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if (!m.isGroup) return replay(mess.group)
-if (!AntiNsfw) return reply(mess.nsfw)
-reply(mess.wait)
- waifudd = await axios.get(`https://waifu.pics/api/nsfw/${command}`)       
- let trapbot = [
-    {buttonId: `trap`, buttonText: {displayText: `Next ⚡`}, type: 1},
-    ]
-  let button2Messages = {
-   image: {url:waifudd.data.url},
-   caption:  `Here you go!`,
-  buttons: trapbot,
-  headerType: 1
-  }     
-            await XeonBotInc.sendMessage(m.chat, button2Messages, { quoted:m }).catch(err => {
-                    return('Error!')
-                })
-break
-case 'hentai-neko' :
-case 'hneko' :
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if (!m.isGroup) return replay(mess.group)
-if (!AntiNsfw) return reply(mess.nsfw)
-    waifudd = await axios.get(`https://waifu.pics/api/nsfw/neko`)
- let hnekobot = [
-    {buttonId: `.hneko`, buttonText: {displayText: `Next ⚡`}, type: 1},
-    ]
-  let button3Messages = {
-   image: {url:waifudd.data.url},
-   caption:  `Here you go!`,
-  buttons: hnekobot,
-  headerType: 1
-  }      
-            await XeonBotInc.sendMessage(m.chat, button3Messages, { quoted:m }).catch(err => {
-                    return('Error!')
-                })
-break
-case 'hentai-waifu' :
-case 'nwaifu' :
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if (!m.isGroup) return replay(mess.group)
-if (!AntiNsfw) return reply(mess.nsfw)
-reply(mess.wait)
-    waifudd = await axios.get(`https://waifu.pics/api/nsfw/waifu`)         
- let nwaifubot = [
-    {buttonId: `.hneko`, buttonText: {displayText: `Next ⚡`}, type: 1},
-    ]
-  let button4Messages = {
-   image: {url:waifudd.data.url},
-   caption:  `Here you go!`,
-  buttons: nwaifubot,
-  headerType: 1
-  }      
-            await XeonBotInc.sendMessage(m.chat, button4Messages, { quoted:m }).catch(err => {
-                    return('Error!')
-                })
-break
-case 'gasm':
+case 'gasmx':
    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 	if (!AntiNsfw) return reply(mess.nsfw)
@@ -3839,7 +3621,7 @@ reply(mess.wait)
                     return('Error!')
                 })
 break   
-case 'smug2':
+case 'smugx2':
    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 reply(mess.wait)						
@@ -5903,20 +5685,6 @@ maker.textpro("https://textpro.me/fruit-juice-text-effect-861.html", [
   .then((data) => XeonBotInc.sendMessage(m.chat, { image: { url: data }, caption: `Made by ${global.botname}` }, { quoted: m }))
   .catch((err) => console.log(err));
    break
-case 'pornhub':{
-	if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if(!q) return reply(`Example: ${prefix + command} ajg | ea`)
-reply(mess.wait)
-  inilogo4 = args.join(" ")
-inilogo9 = args.join(" ")
-   var logo4 = inilogo4.split('|')[0]
-var logo9 = inilogo9.split('|')[1]
-    let anu = await textpro("https://textpro.me/pornhub-style-logo-online-generator-free-977.html", [`${logo4}`,`${logo9}`])
-console.log(anu)
-XeonBotInc.sendMessage(from,{image:{url:anu}, caption:"Here you go!"},{quoted:m})
-}
-break
 case 'retro':{
 	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -6219,7 +5987,7 @@ reply(teks)
 })
 }
 break
-case 'gimage': case 'googleimage': {
+case 'gimg': case 'googleimage': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!args[0]) return reply("What picture are you looking for??")
@@ -6234,9 +6002,9 @@ let buttonMessage = {
 image: { url: images },
 caption: `*| GOOGLE IMAGE |*
 
-${global.themeemoji} Query : ${text}
-${global.themeemoji} Media Url : ${images}`,
-footer: `${global.botname}`,
+Query : ${text}
+Media Url : ${images}`,
+footer: `${global.footer}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -8246,7 +8014,7 @@ mediaUrl:websitex,
 sourceUrl: websitex }}}, {quoted: m})
 }
 break
-	case 'musicx': case 'playx': case 'songx': case 'ytplayx': {
+	case 'musicx': case 'playx': case 'songx': case 'yt': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 let yts = require("yt-search")
@@ -8259,18 +8027,17 @@ let buttons = [
 ]
 let buttonMessage = {
 image: { url: anu.thumbnail },
-caption: `*| YOUTUBE PLAY |*
-
-${global.themeemoji} Title : ${anu.title}
-${global.themeemoji} Ext : Search
-${global.themeemoji} ID : ${anu.videoId}
-${global.themeemoji} Duration : ${anu.timestamp}
-${global.themeemoji} Viewers : ${anu.views}
-${global.themeemoji} Uploaded : ${anu.ago}
-${global.themeemoji} Author : ${anu.author.name}
-${global.themeemoji} Channel : ${anu.author.url}
-${global.themeemoji} Description : ${anu.description}
-${global.themeemoji} Url : ${anu.url}`,
+caption: `❖ 𝙔𝙊𝙐𝙏𝙐𝘽𝙀 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙀𝙍 ❖
+┌─────────❖
+│🧚‍♀️➤ Title : ${anu.title}
+│🧚‍♀️➤ Ext : Search
+│🧚‍♀️➤ ID : ${anu.videoId}
+│🧚‍♀️➤ Duration : ${anu.timestamp}
+│🧚‍♀️➤ Viewers : ${anu.views}
+│🧚‍♀️➤ Uploaded : ${anu.ago}
+│🧚‍♀️➤ Author : ${anu.author.name}
+│🧚‍♀️➤ Url : ${anu.url}
+└─────────❖`,
 footer: `${global.botname}`,
 buttons: buttons,
 headerType: 4,
@@ -9965,7 +9732,7 @@ user.afkReason = text
 reply(`🦄ᵈʳᵉᵃᵐ ᵍᵘʸ ˣᵉᵒⁿ⸙xbugbot ${m.pushName} ${text ? ': ' + text : ''}`)
 }
 break
-  case 'not_for_use_xxxxxxxxxxxxwkwkwk':{
+  case 'bye_bye ':{
            	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
                 if (!isCreator) return replay(`${mess.owner}`)
@@ -10028,9 +9795,9 @@ if (isBanChat) return reply(mess.banChat)
 if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
 const buttons = [
-  {buttonId: 'allmenu', buttonText: {displayText: 'All Menu 🍱'}, type: 1},
-  {buttonId: 'command', buttonText: {displayText: 'List Menu 🍢'}, type: 1},
-  {buttonId: 'owner', buttonText: {displayText: 'Owner 🤣'}, type: 1}
+  {buttonId: 'allmenu', buttonText: {displayText: 'All Menu'}, type: 1},
+  {buttonId: 'command', buttonText: {displayText: 'List Menu'}, type: 1},
+  {buttonId: 'owner', buttonText: {displayText: 'Owner'}, type: 1}
 ]
 const buttonMessage = {
     image: thumb,
@@ -10596,40 +10363,6 @@ const buttonMessage = {
 const sendMsg = await XeonBotInc.sendMessage(m.chat, buttonMessage)
 }
 break
-case 'randomimagemenu':{
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Random Image Menu')
-XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
-const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'Script 🔖'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: 'Donate 🍵'}, type: 1},
-  {buttonId: 'owner', buttonText: {displayText: 'Owner 🤣'}, type: 1}
-]
-const buttonMessage = {
-    image: unicorn,
-    caption: `╔═══════✪「 RANDOM IMG 」	
-╠${prefix}coffee
-╠${prefix}bts
-╠${prefix}woof
-╠${prefix}meow
-╠${prefix}lizard
-╠${prefix}wallneon
-╠${prefix}wallpubg
-╠${prefix}wallml
-╠${prefix}wallrandom
-╠${prefix}wallcode
-╠${prefix}animewall [query]
-╠${prefix}animewall2 [query]
-╚═════════════✪`,
-    footer: `「${botname}」`,
-    buttons: buttons,
-    headerType: 4
-}
-const sendMsg = await XeonBotInc.sendMessage(m.chat, buttonMessage)
-}
-break
-
 case 'emotemenu':{
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
@@ -10698,86 +10431,6 @@ const buttonMessage = {
 const sendMsg = await XeonBotInc.sendMessage(m.chat, buttonMessage)
 }
 break
-case 'animemenu':{
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Anime Menu')
-XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
-const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'Script 🔖'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: 'Donate 🍵'}, type: 1},
-  {buttonId: 'owner', buttonText: {displayText: 'Owner 🤣'}, type: 1}
-]
-const buttonMessage = {
-    image: unicorn,
-    caption: `╔═══════✪「 ANIME 」	
-╠${prefix}asuna
-╠${prefix}anna
-╠${prefix}chitoge
-╠${prefix}cosplay
-╠${prefix}elaina
-╠${prefix}emilia
-╠${prefix}gremory
-╠${prefix}kaguya
-╠${prefix}kotori
-╠${prefix}kurumi
-╠${prefix}mikasa
-╠${prefix}rize
-╠${prefix}naruto
-╠${prefix}yaoi
-╠${prefix}neko2
-╠${prefix}waifu
-╠${prefix}waifu3
-╠${prefix}shinobu
-╠${prefix}awoo2
-╠${prefix}waifu2
-╠${prefix}foxgirl
-╠${prefix}animenom
-╠${prefix}goose
-╠${prefix}8ball
-╠${prefix}avatar
-╠${prefix}tickle
-╠${prefix}gecg
-╠${prefix}feed
-╠${prefix}animeslap
-╠${prefix}animespank
-╠${prefix}animepat
-╠${prefix}animeneko
-╠${prefix}animekiss
-╠${prefix}animewlp
-╠${prefix}animecuddle
-╠${prefix}animecry
-╠${prefix}animekill
-╠${prefix}animelick
-╠${prefix}animebite
-╠${prefix}animeyeet
-╠${prefix}animebully
-╠${prefix}animebonk
-╠${prefix}animewink
-╠${prefix}animepoke
-╠${prefix}animesmile
-╠${prefix}animewave
-╠${prefix}animeawoo
-╠${prefix}animeblush
-╠${prefix}animesmug
-╠${prefix}animeglomp
-╠${prefix}animehappy
-╠${prefix}animedance
-╠${prefix}animecringe
-╠${prefix}animehighfive
-╠${prefix}animehandhold
-╠${prefix}animemegumin
-╠${prefix}megumin2
-╠${prefix}loli
-╠${prefix}couplepp
-╚═════════════✪`,
-    footer: `「${botname}」`,
-    buttons: buttons,
-    headerType: 4
-}
-const sendMsg = await XeonBotInc.sendMessage(m.chat, buttonMessage)
-}
-break
 case 'stickermenu':{
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
@@ -10796,58 +10449,6 @@ const buttonMessage = {
 ╠ ${prefix}emojimix
 ╠ ${prefix}attp
 ╠ ${prefix}ttp
-╠ ${prefix}doge
-╠ ${prefix}lovesticker
-╚═════════════✪`,
-    footer: `「${botname}」`,
-    buttons: buttons,
-    headerType: 4
-}
-const sendMsg = await XeonBotInc.sendMessage(m.chat, buttonMessage)
-}
-break
-case 'animestickermenu':{
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Anime Sticker Menu')
-XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
-const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'Script 🔖'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: 'Donate 🍵'}, type: 1},
-  {buttonId: 'owner', buttonText: {displayText: 'Owner 🤣'}, type: 1}
-]
-const buttonMessage = {
-    image: unicorn,
-    caption: `╔═══════✪「 ANIME STICKER 」	
-╠${prefix}loli
-╠${prefix}bully
-╠${prefix}cuddle
-╠${prefix}cry
-╠${prefix}hug
-╠${prefix}awoo
-╠${prefix}kiss
-╠${prefix}lick
-╠${prefix}pat
-╠${prefix}smug
-╠${prefix}bonk
-╠${prefix}yeet
-╠${prefix}blush
-╠${prefix}smile
-╠${prefix}wave
-╠${prefix}highfive
-╠${prefix}handhold
-╠${prefix}nom
-╠${prefix}glomp
-╠${prefix}bite
-╠${prefix}slap
-╠${prefix}kill
-╠${prefix}happy
-╠${prefix}wink
-╠${prefix}poke
-╠${prefix}dance
-╠${prefix}cringe
-╠${prefix}neko
-╠${prefix}gura
 ╚═════════════✪`,
     footer: `「${botname}」`,
     buttons: buttons,
@@ -10926,13 +10527,6 @@ const buttonMessage = {
 ╠ ${prefix}lit
 ╠ ${prefix}dumbass
 ╠ ${prefix}crackhead
-╠ ${prefix}mf
-╠ ${prefix}motherfucker
-╠ ${prefix}sucker
-╠ ${prefix}fuckboy
-╠ ${prefix}playboy
-╠ ${prefix}fuckgirl
-╠ ${prefix}playgirl
 ╚═════════════✪`,
     footer: `「${botname}」`,
     buttons: buttons,
@@ -11228,102 +10822,6 @@ const buttonMessage = {
 const sendMsg = await XeonBotInc.sendMessage(m.chat, buttonMessage)
 }
 break
-case 'indomenu':{
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Indo Menu')
-XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
-const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'Script 🔖'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: 'Donate 🍵'}, type: 1},
-  {buttonId: 'owner', buttonText: {displayText: 'Owner 🤣'}, type: 1}
-]
-const buttonMessage = {
-    image: unicorn,
-    caption: `╔═══════✪「 INDO 」	
-╠ ${prefix}darkjoke
-╠ ${prefix}quotes
-╠ ${prefix}animequotes
-╠${prefix}jalantikus-meme
-╠ ${prefix}merdeka-news 
-╠ ${prefix}kontan-news 
-╠ ${prefix}cnbc-news 
-╠ ${prefix}tribun-news 
-╠ ${prefix}indozone-news 
-╠ ${prefix}kompas-news 
-╠ ${prefix}detik-news 
-╠ ${prefix}daily-news 
-╠ ${prefix}inews-news 
-╠ ${prefix}okezone-news 
-╠ ${prefix}sindo-news 
-╠ ${prefix}tempo-news 
-╠ ${prefix}antara-news 
-╠ ${prefix}cnn-news 
-╠ ${prefix}fajar-news 
-╠${prefix}cinemaschedule
-╠${prefix}wiki
-╠${prefix}covidindo
-╠${prefix}earthquake
-╠${prefix}tvschedule
-╚═════════════✪`,
-    footer: `「${botname}」`,
-    buttons: buttons,
-    headerType: 4
-}
-const sendMsg = await XeonBotInc.sendMessage(m.chat, buttonMessage)
-}
-break
-case 'indohoroscopemenu':{
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-var unicorn = await getBuffer(picak+'Indo Horoscope Menu')
-XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
-const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'Script 🔖'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: 'Donate 🍵'}, type: 1},
-  {buttonId: 'owner', buttonText: {displayText: 'Owner 🤣'}, type: 1}
-]
-const buttonMessage = {
-    image: unicorn,
-    caption: `╔═✪「 INDO HOROSCOPE 」	
-╠${prefix}nomorhoki
-╠${prefix}artimimpi 
-╠${prefix}artinama 
-╠${prefix}ramaljodoh 
-╠${prefix}ramaljodohbali 
-╠${prefix}suamiistri 
-╠${prefix}ramalcinta 
-╠${prefix}cocoknama 
-╠${prefix}pasangan 
-╠${prefix}jadiannikah 
-╠${prefix}sifatusaha 
-╠${prefix}rezeki 
-╠${prefix}pekerjaan 
-╠${prefix}nasib 
-╠${prefix}penyakit 
-╠${prefix}tarot 
-╠${prefix}fengshui 
-╠${prefix}haribaik 
-╠${prefix}harisangar 
-╠${prefix}harisial
-╠${prefix}nagahari
-╠${prefix}arahrezeki
-╠${prefix}peruntungan 
-╠${prefix}weton 
-╠${prefix}karakter
-╠${prefix}keberuntungan
-╠${prefix}memancing
-╠${prefix}masasubur
-╠${prefix}zodiak
-╠${prefix}shio
-╚═════════════✪`,
-    footer: `「${botname}」`,
-    buttons: buttons,
-    headerType: 4
-}
-const sendMsg = await XeonBotInc.sendMessage(m.chat, buttonMessage)
-}
-break
 case 'othermenu':{
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
@@ -11368,8 +10866,7 @@ case 'tqtt':
 	if (isBanChat) return reply(mess.banChat)
 reply(`Thanks to
 LORD BUDDHA
-Xeon (Me)
-My family
+Xeon 
 And all friends who helped assemble this sexy script !!!`)
 break
             default:
