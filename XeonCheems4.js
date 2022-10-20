@@ -10065,7 +10065,7 @@ case 'command': {
 	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 	const sections = [{
-								"title": "Initial Features Of Bot 🦄",
+								"title": "Initial Features Of Bot",
 								"rows": [
 									{
 										"title": "Other ☕",
@@ -10206,9 +10206,9 @@ if (isBanChat) return reply(mess.banChat)
 							}
 						]
 const listMessage = {
-  text: "Please choose the menu",
-  footer: `「${botname}」\n📍YouTube: ${websitex}\n🍜Script: ${botscript}`,
-  title: `Hi 👋 ${pushname}`,
+  text: "╔═══════════════════╗\n╠𝐏𝐥𝐞𝐚𝐬𝐞 𝐂𝐡𝐨𝐨𝐬𝐞 𝐭𝐡𝐞 𝐦𝐞𝐧𝐮\n║\n╠𝐏𝐨𝐰𝐞𝐫𝐝 𝐁𝐲 ${global.ownername} \n║\n╠   「 𝗡𝗢𝗧𝗘 」\n╠ ${global.note}\n║\n║\n║\n╚═══════════════════╝\n",
+  footer: `${global.footer}`,
+  title: `Hi ${pushname}`,
   buttonText: "Menu",
   sections
 }
